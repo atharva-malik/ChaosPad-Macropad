@@ -1,7 +1,7 @@
 (kicad_pcb
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(general
 		(thickness 1.6)
 		(legacy_teardrops no)
@@ -9,41 +9,42 @@
 	(paper "A4")
 	(layers
 		(0 "F.Cu" signal)
-		(31 "B.Cu" signal)
-		(32 "B.Adhes" user "B.Adhesive")
-		(33 "F.Adhes" user "F.Adhesive")
-		(34 "B.Paste" user)
-		(35 "F.Paste" user)
-		(36 "B.SilkS" user "B.Silkscreen")
-		(37 "F.SilkS" user "F.Silkscreen")
-		(38 "B.Mask" user)
-		(39 "F.Mask" user)
-		(40 "Dwgs.User" user "User.Drawings")
-		(41 "Cmts.User" user "User.Comments")
-		(42 "Eco1.User" user "User.Eco1")
-		(43 "Eco2.User" user "User.Eco2")
-		(44 "Edge.Cuts" user)
-		(45 "Margin" user)
-		(46 "B.CrtYd" user "B.Courtyard")
-		(47 "F.CrtYd" user "F.Courtyard")
-		(48 "B.Fab" user)
-		(49 "F.Fab" user)
-		(50 "User.1" user)
-		(51 "User.2" user)
-		(52 "User.3" user)
-		(53 "User.4" user)
-		(54 "User.5" user)
-		(55 "User.6" user)
-		(56 "User.7" user)
-		(57 "User.8" user)
-		(58 "User.9" user)
+		(2 "B.Cu" signal)
+		(9 "F.Adhes" user "F.Adhesive")
+		(11 "B.Adhes" user "B.Adhesive")
+		(13 "F.Paste" user)
+		(15 "B.Paste" user)
+		(5 "F.SilkS" user "F.Silkscreen")
+		(7 "B.SilkS" user "B.Silkscreen")
+		(1 "F.Mask" user)
+		(3 "B.Mask" user)
+		(17 "Dwgs.User" user "User.Drawings")
+		(19 "Cmts.User" user "User.Comments")
+		(21 "Eco1.User" user "User.Eco1")
+		(23 "Eco2.User" user "User.Eco2")
+		(25 "Edge.Cuts" user)
+		(27 "Margin" user)
+		(31 "F.CrtYd" user "F.Courtyard")
+		(29 "B.CrtYd" user "B.Courtyard")
+		(35 "F.Fab" user)
+		(33 "B.Fab" user)
+		(39 "User.1" user)
+		(41 "User.2" user)
+		(43 "User.3" user)
+		(45 "User.4" user)
+		(47 "User.5" user)
+		(49 "User.6" user)
+		(51 "User.7" user)
+		(53 "User.8" user)
+		(55 "User.9" user)
 	)
 	(setup
 		(pad_to_mask_clearance 0)
 		(allow_soldermask_bridges_in_footprints no)
+		(tenting front back)
 		(pcbplotparams
-			(layerselection 0x00010fc_ffffffff)
-			(plot_on_all_layers_selection 0x0000000_00000000)
+			(layerselection 0x00000000_00000000_55555555_5755f5ff)
+			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
 			(disableapertmacros no)
 			(usegerberextensions no)
 			(usegerberattributes yes)
@@ -53,7 +54,6 @@
 			(dashed_line_gap_ratio 3.000000)
 			(svgprecision 4)
 			(plotframeref no)
-			(viasonmask no)
 			(mode 1)
 			(useauxorigin no)
 			(hpglpennumber 1)
@@ -61,16 +61,19 @@
 			(hpglpendiameter 15.000000)
 			(pdf_front_fp_property_popups yes)
 			(pdf_back_fp_property_popups yes)
+			(pdf_metadata yes)
+			(pdf_single_document no)
 			(dxfpolygonmode yes)
 			(dxfimperialunits yes)
 			(dxfusepcbnewfont yes)
 			(psnegative no)
 			(psa4output no)
-			(plotreference yes)
-			(plotvalue yes)
-			(plotfptext yes)
-			(plotinvisibletext no)
+			(plot_black_and_white yes)
 			(sketchpadsonfab no)
+			(plotpadnumbers no)
+			(hidednponfab no)
+			(sketchdnponfab yes)
+			(crossoutdnponfab yes)
 			(subtractmaskfromsilk no)
 			(outputformat 1)
 			(mirror no)
@@ -102,7 +105,7 @@
 	(net 20 "RTRY B")
 	(net 21 "RTRY SWITCH")
 	(net 22 "RTRY A")
-	(net 23 "unconnected-(U1-3V3-Pad12)")
+	(net 23 "3.3V")
 	(footprint "ScottoKeebs_MX:MX_PCB_1.00u"
 		(layer "F.Cu")
 		(uuid "2d117938-a752-45ab-bdda-701e663d5ec8")
@@ -127,18 +130,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "ScottoKeebs_MX:MX_PCB_1.00u"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "5f620504-bd75-4472-b0fb-f1a022ff4507")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -168,7 +159,7 @@
 			)
 		)
 		(path "/1c397e03-08c8-4c46-adc2-d4f9f612e0bc")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "Hackpad.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -425,6 +416,7 @@
 			(pintype "passive")
 			(uuid "38e08749-6374-4267-b778-c1a591a42613")
 		)
+		(embedded_fonts no)
 		(model "${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_MX.3dshapes/MX_PCB.step"
 			(offset
 				(xyz 0 0 0)
@@ -465,18 +457,6 @@
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_MX:MX_PCB_1.00u"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "68934ebc-ccc3-4a8e-9441-90ca18be3695")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
@@ -502,7 +482,7 @@
 			)
 		)
 		(path "/6c32a4c5-fd8a-493b-b232-826eaf50614b")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "Hackpad.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -759,6 +739,7 @@
 			(pintype "passive")
 			(uuid "caefef38-c273-44e1-8959-57aae8d1d7d9")
 		)
+		(embedded_fonts no)
 		(model "${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_MX.3dshapes/MX_PCB.step"
 			(offset
 				(xyz 0 0 0)
@@ -799,19 +780,6 @@
 				)
 			)
 		)
-		(property "Footprint" "Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "6c159098-56f7-4f18-b1f3-80296457c25c")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
@@ -840,7 +808,7 @@
 		)
 		(property ki_fp_filters "RotaryEncoder*Switch*")
 		(path "/44755227-f7b3-4f55-aac4-17426d9e7ad1")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "Hackpad.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -980,7 +948,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "7e085457-b06c-44ff-9a9e-549165aad820")
 		)
@@ -1101,7 +1069,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "56a1c373-b52f-4401-ab84-0a595287e252")
 		)
@@ -1144,7 +1112,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 17 "GROUND")
+			(net 23 "3.3V")
 			(pinfunction "C")
 			(pintype "passive")
 			(uuid "64c90aab-e0ae-48aa-92d4-32973559df1f")
@@ -1187,6 +1155,7 @@
 			(pintype "passive")
 			(uuid "064beb4e-bf09-4067-97da-df2b3ad2c416")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Rotary_Encoder.3dshapes/RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -1227,18 +1196,6 @@
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_MX:MX_PCB_1.00u"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "f949dbfd-36de-4782-bf37-63fa5c331f09")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
@@ -1264,7 +1221,7 @@
 			)
 		)
 		(path "/3aa1985c-d0ff-4c74-9175-9645f7dd1840")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "Hackpad.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -1521,6 +1478,7 @@
 			(pintype "passive")
 			(uuid "d5d62f99-2d37-45ef-9f63-bbd3f8e1ed3b")
 		)
+		(embedded_fonts no)
 		(model "${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_MX.3dshapes/MX_PCB.step"
 			(offset
 				(xyz 0 0 0)
@@ -1562,18 +1520,6 @@
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_MX:MX_PCB_1.00u"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "ec9d0450-85c2-4b41-a13d-2dbd1d916d1a")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
@@ -1599,7 +1545,7 @@
 			)
 		)
 		(path "/5d42a3ba-32ff-4f50-92ac-a9d3670469df")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "Hackpad.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -1816,6 +1762,7 @@
 			(pintype "passive")
 			(uuid "27d97468-d396-471f-87e5-1f9871578ca6")
 		)
+		(embedded_fonts no)
 		(model "${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_MX.3dshapes/MX_PCB.step"
 			(offset
 				(xyz 0 0 0)
@@ -1856,18 +1803,6 @@
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_MX:MX_PCB_1.00u"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "34012526-83fd-43d0-a6a6-753c03f4f0b4")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
@@ -1893,7 +1828,7 @@
 			)
 		)
 		(path "/3e9dd96f-902c-4723-9bd8-7469a7a77fa8")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "Hackpad.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -2150,6 +2085,7 @@
 			(pintype "passive")
 			(uuid "a3ee4164-4d35-4fb0-be8c-496692ba9db2")
 		)
+		(embedded_fonts no)
 		(model "${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_MX.3dshapes/MX_PCB.step"
 			(offset
 				(xyz 0 0 0)
@@ -2190,18 +2126,6 @@
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_MX:MX_PCB_1.00u"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "c522f311-f5e7-4d63-91e1-fb11740fc856")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
@@ -2227,7 +2151,7 @@
 			)
 		)
 		(path "/67603a05-445a-4863-8c78-d13e5324cefa")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "Hackpad.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -2484,6 +2408,7 @@
 			(pintype "passive")
 			(uuid "70f9d6e8-9573-45a7-9440-1ea007531733")
 		)
+		(embedded_fonts no)
 		(model "${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_MX.3dshapes/MX_PCB.step"
 			(offset
 				(xyz 0 0 0)
@@ -2524,18 +2449,6 @@
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_MX:MX_PCB_1.00u"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "fc02bd05-2cce-470b-b2d1-07bdcbf3884b")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
@@ -2561,7 +2474,7 @@
 			)
 		)
 		(path "/d9aa658b-e07d-4065-8414-dcc02f85555e")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "Hackpad.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -2818,6 +2731,7 @@
 			(pintype "passive")
 			(uuid "0c9b1ddd-5319-4750-a3c6-b5abb57d6abd")
 		)
+		(embedded_fonts no)
 		(model "${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_MX.3dshapes/MX_PCB.step"
 			(offset
 				(xyz 0 0 0)
@@ -2858,18 +2772,6 @@
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_MX:MX_PCB_1.00u"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "9638c2bb-a9cc-4fab-9055-9be697a07132")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
@@ -2895,7 +2797,7 @@
 			)
 		)
 		(path "/e84cbc9a-8a42-4286-8587-028c430bba0d")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "Hackpad.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -3152,6 +3054,7 @@
 			(pintype "passive")
 			(uuid "f85bd9da-bbf3-4585-988e-d74dd5d0a22e")
 		)
+		(embedded_fonts no)
 		(model "${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_MX.3dshapes/MX_PCB.step"
 			(offset
 				(xyz 0 0 0)
@@ -3191,18 +3094,6 @@
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_Components:OLED_128x64"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "4affebc2-7e23-4b18-adac-0b1125f78592")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
@@ -3228,7 +3119,7 @@
 			)
 		)
 		(path "/f857ad14-63f2-451e-9966-d0fa553f15b6")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "Hackpad.kicad_sch")
 		(attr through_hole exclude_from_pos_files)
 		(fp_line
@@ -3315,6 +3206,7 @@
 			(pintype "bidirectional")
 			(uuid "f0dfdc02-9861-4c1b-b1a1-dbc47f034093")
 		)
+		(embedded_fonts no)
 		(model "${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/OLED_128x64.step"
 			(offset
 				(xyz 0 -12.2 2.54)
@@ -3355,18 +3247,6 @@
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_MX:MX_PCB_1.00u"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "69e95d01-9eef-47c5-aeaf-ce32658a496a")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
@@ -3392,7 +3272,7 @@
 			)
 		)
 		(path "/8f78cd0e-bf36-49da-b42c-7e7a511422ca")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "Hackpad.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -3649,6 +3529,7 @@
 			(pintype "passive")
 			(uuid "aed0c897-3e0e-403d-8f4f-b12b2f2be0b7")
 		)
+		(embedded_fonts no)
 		(model "${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_MX.3dshapes/MX_PCB.step"
 			(offset
 				(xyz 0 0 0)
@@ -3693,22 +3574,8 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "a6ac9d48-7d3e-40cf-beb0-38a160b60d17")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -3722,7 +3589,7 @@
 			)
 		)
 		(property "Description" "1N4148 (DO-35) or 1N4148W (SOD-123)"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -3736,7 +3603,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -3750,7 +3617,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -3765,7 +3632,7 @@
 		)
 		(property ki_fp_filters "D*DO?35*")
 		(path "/1f5e3f10-f646-4be7-be8b-d161af9e13da")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "Hackpad.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -3890,6 +3757,7 @@
 			(pintype "passive")
 			(uuid "6c4d0b33-eb51-45bc-b575-b50a33fd2d54")
 		)
+		(embedded_fonts no)
 		(model "${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/Diode_DO-35.step"
 			(offset
 				(xyz 0 0 0)
@@ -3929,20 +3797,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "309bda14-6cf2-4bfa-8ed4-ddecea22c9cf")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -4006,7 +3860,7 @@
 		)
 		(property ki_fp_filters "D*DO?35*")
 		(path "/df6ac914-7b4f-47d9-9a1f-2a76a27562d3")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "Hackpad.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -4131,6 +3985,7 @@
 			(pintype "passive")
 			(uuid "86ab21db-55f3-490c-a3a5-8f470e4f001d")
 		)
+		(embedded_fonts no)
 		(model "${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/Diode_DO-35.step"
 			(offset
 				(xyz 0 0 0)
@@ -4175,22 +4030,8 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "97679b93-d980-4bf7-87f4-e99123b40b8b")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -4204,7 +4045,7 @@
 			)
 		)
 		(property "Description" "1N4148 (DO-35) or 1N4148W (SOD-123)"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -4218,7 +4059,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -4232,7 +4073,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -4247,7 +4088,7 @@
 		)
 		(property ki_fp_filters "D*DO?35*")
 		(path "/709fc0d2-48ef-4acd-8175-9e820d3d3002")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "Hackpad.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -4372,6 +4213,7 @@
 			(pintype "passive")
 			(uuid "2e1e373c-6d3a-4892-a8dd-a075a6afb448")
 		)
+		(embedded_fonts no)
 		(model "${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/Diode_DO-35.step"
 			(offset
 				(xyz 0 0 0)
@@ -4416,22 +4258,8 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "b53cb47c-8e19-4de6-9fd8-6dc8c6f9bd95")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -4445,7 +4273,7 @@
 			)
 		)
 		(property "Description" "1N4148 (DO-35) or 1N4148W (SOD-123)"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -4459,7 +4287,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -4473,7 +4301,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -4488,7 +4316,7 @@
 		)
 		(property ki_fp_filters "D*DO?35*")
 		(path "/3b3c3e1c-4a6e-4f8d-ab5d-17b622cd646c")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "Hackpad.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -4613,6 +4441,7 @@
 			(pintype "passive")
 			(uuid "9305ad37-ed8c-45b3-b0fe-782c88feb1c4")
 		)
+		(embedded_fonts no)
 		(model "${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/Diode_DO-35.step"
 			(offset
 				(xyz 0 0 0)
@@ -4657,22 +4486,8 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "1e127f66-a1b2-4f09-9104-aeb223741b7f")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -4686,7 +4501,7 @@
 			)
 		)
 		(property "Description" "1N4148 (DO-35) or 1N4148W (SOD-123)"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -4700,7 +4515,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -4714,7 +4529,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -4729,7 +4544,7 @@
 		)
 		(property ki_fp_filters "D*DO?35*")
 		(path "/11a715bd-5efc-490e-ac26-339adbc33943")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "Hackpad.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -4854,6 +4669,7 @@
 			(pintype "passive")
 			(uuid "6d345173-7a21-4a5b-83e5-6a883a4f7eae")
 		)
+		(embedded_fonts no)
 		(model "${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/Diode_DO-35.step"
 			(offset
 				(xyz 0 0 0)
@@ -4897,20 +4713,6 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_MCU:Seeed_XIAO_RP2040"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "1d4b52a4-b401-44e6-866b-5ca668b85e58")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 90)
 			(unlocked yes)
@@ -4940,7 +4742,7 @@
 			)
 		)
 		(path "/6dc55cd8-76c2-472d-8205-c3845bbd02ff")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "Hackpad.kicad_sch")
 		(attr through_hole)
 		(fp_rect
@@ -4950,7 +4752,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "Dwgs.User")
 			(uuid "b0edaf3c-8196-4080-a066-b60f1b9f612a")
 		)
@@ -4961,14 +4763,14 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "Dwgs.User")
 			(uuid "d7ef3c04-40bd-4858-9899-b0b7c1ebcd27")
 		)
 		(pad "1" smd roundrect
 			(at -8.065 7.62)
 			(size 2.75 2)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net 13 "COLUMN 0")
 			(pinfunction "PA02_A0_D0")
@@ -4989,7 +4791,7 @@
 		(pad "2" smd roundrect
 			(at -8.065 5.08)
 			(size 2.75 2)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net 14 "COLUMN 1")
 			(pinfunction "PA4_A1_D1")
@@ -5010,7 +4812,7 @@
 		(pad "3" smd roundrect
 			(at -8.065 2.54)
 			(size 2.75 2)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net 15 "COLUMN 2")
 			(pinfunction "PA10_A2_D2")
@@ -5031,7 +4833,7 @@
 		(pad "4" smd roundrect
 			(at -8.065 0)
 			(size 2.75 2)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net 1 "ROW 0")
 			(pinfunction "PA11_A3_D3")
@@ -5052,7 +4854,7 @@
 		(pad "5" smd roundrect
 			(at -8.065 -2.54)
 			(size 2.75 2)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net 19 "SDA")
 			(pinfunction "PA8_A4_D4_SDA")
@@ -5073,7 +4875,7 @@
 		(pad "6" smd roundrect
 			(at -8.065 -5.08)
 			(size 2.75 2)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net 16 "SCL")
 			(pinfunction "PA9_A5_D5_SCL")
@@ -5094,7 +4896,7 @@
 		(pad "7" smd roundrect
 			(at -8.065 -7.62)
 			(size 2.75 2)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net 6 "ROW 1")
 			(pinfunction "PB08_A6_D6_TX")
@@ -5126,7 +4928,7 @@
 		(pad "8" smd roundrect
 			(at 8.1 -7.62)
 			(size 2.75 2)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net 10 "ROW 2")
 			(pinfunction "PB09_A7_D7_RX")
@@ -5147,7 +4949,7 @@
 		(pad "9" smd roundrect
 			(at 8.1 -5.08)
 			(size 2.75 2)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net 21 "RTRY SWITCH")
 			(pinfunction "PA7_A8_D8_SCK")
@@ -5168,7 +4970,7 @@
 		(pad "10" smd roundrect
 			(at 8.1 -2.54)
 			(size 2.75 2)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net 20 "RTRY B")
 			(pinfunction "PA5_A9_D9_MISO")
@@ -5189,7 +4991,7 @@
 		(pad "11" smd roundrect
 			(at 8.1 0)
 			(size 2.75 2)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net 22 "RTRY A")
 			(pinfunction "PA6_A10_D10_MOSI")
@@ -5202,7 +5004,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 23 "unconnected-(U1-3V3-Pad12)")
+			(net 23 "3.3V")
 			(pinfunction "3V3")
 			(pintype "passive")
 			(uuid "05a43797-7066-4355-902d-d9a9bc486075")
@@ -5210,9 +5012,9 @@
 		(pad "12" smd roundrect
 			(at 8.1 2.54)
 			(size 2.75 2)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
-			(net 23 "unconnected-(U1-3V3-Pad12)")
+			(net 23 "3.3V")
 			(pinfunction "3V3")
 			(pintype "passive")
 			(uuid "5878997b-b59c-4585-87a6-956465940621")
@@ -5231,7 +5033,7 @@
 		(pad "13" smd roundrect
 			(at 8.1 5.08)
 			(size 2.75 2)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net 17 "GROUND")
 			(pinfunction "GND")
@@ -5252,13 +5054,14 @@
 		(pad "14" smd roundrect
 			(at 8.1 7.62)
 			(size 2.75 2)
-			(layers "B.Cu" "B.Paste" "B.Mask")
+			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net 18 "5V")
 			(pinfunction "5V")
 			(pintype "passive")
 			(uuid "cc14363a-f1cc-4690-a8ab-9599a0d77bb7")
 		)
+		(embedded_fonts no)
 		(model "${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_MCU.3dshapes/Seeed_XIAO_RP2040.step"
 			(offset
 				(xyz 0 0 0)
@@ -5303,22 +5106,8 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "e288fe9d-e38a-4261-a943-b9387b423fcb")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -5332,7 +5121,7 @@
 			)
 		)
 		(property "Description" "1N4148 (DO-35) or 1N4148W (SOD-123)"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -5346,7 +5135,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -5360,7 +5149,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -5375,7 +5164,7 @@
 		)
 		(property ki_fp_filters "D*DO?35*")
 		(path "/8a2733b7-d816-4def-96c8-5a944e4c3d35")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "Hackpad.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -5500,6 +5289,7 @@
 			(pintype "passive")
 			(uuid "7ec82dcf-65c8-4160-8e32-f24f417efa73")
 		)
+		(embedded_fonts no)
 		(model "${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/Diode_DO-35.step"
 			(offset
 				(xyz 0 0 0)
@@ -5544,22 +5334,8 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "17b0c949-077a-47bb-b88c-8fc23b6177e6")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -5573,7 +5349,7 @@
 			)
 		)
 		(property "Description" "1N4148 (DO-35) or 1N4148W (SOD-123)"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -5587,7 +5363,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -5601,7 +5377,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -5616,7 +5392,7 @@
 		)
 		(property ki_fp_filters "D*DO?35*")
 		(path "/4f343e79-8d90-44eb-a1f4-53b067098f0f")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "Hackpad.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -5741,6 +5517,7 @@
 			(pintype "passive")
 			(uuid "4d0d0cb6-e386-4f82-a258-651f01cd7bd8")
 		)
+		(embedded_fonts no)
 		(model "${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/Diode_DO-35.step"
 			(offset
 				(xyz 0 0 0)
@@ -5785,22 +5562,8 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "75bfea69-23a9-47bb-9a61-4048555bb3fa")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -5814,7 +5577,7 @@
 			)
 		)
 		(property "Description" "1N4148 (DO-35) or 1N4148W (SOD-123)"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -5828,7 +5591,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -5842,7 +5605,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -5857,7 +5620,7 @@
 		)
 		(property ki_fp_filters "D*DO?35*")
 		(path "/4cd4adaa-9578-4e70-9f1d-c25be35aef48")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "Hackpad.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -5982,6 +5745,7 @@
 			(pintype "passive")
 			(uuid "55c5db91-5e8d-4eda-9237-f85aa000ad96")
 		)
+		(embedded_fonts no)
 		(model "${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/Diode_DO-35.step"
 			(offset
 				(xyz 0 0 0)
@@ -6026,22 +5790,8 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "752502df-4d1b-4a6b-a1c4-9a4eeb8deb70")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -6055,7 +5805,7 @@
 			)
 		)
 		(property "Description" "1N4148 (DO-35) or 1N4148W (SOD-123)"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -6069,7 +5819,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -6083,7 +5833,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
@@ -6098,7 +5848,7 @@
 		)
 		(property ki_fp_filters "D*DO?35*")
 		(path "/f280b062-d7a8-4f98-8417-60361ea3aa35")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "Hackpad.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -6223,6 +5973,7 @@
 			(pintype "passive")
 			(uuid "f3ae3444-dec4-4892-9363-720815a85037")
 		)
+		(embedded_fonts no)
 		(model "${SCOTTOKEEBS_KICAD}/3dmodels/ScottoKeebs_Components.3dshapes/Diode_DO-35.step"
 			(offset
 				(xyz 0 0 0)
@@ -6242,7 +5993,7 @@
 			(width 0.05)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "Edge.Cuts")
 		(uuid "d3c2d164-03dc-41b3-a61d-1bbfe6cba9f2")
 	)
@@ -6991,22 +6742,6 @@
 		(uuid "17cab94c-0feb-4129-9cb4-cc21bdbb9be1")
 	)
 	(segment
-		(start 48 85.5)
-		(end 60 85.5)
-		(width 0.2)
-		(layer "B.Cu")
-		(net 17)
-		(uuid "2c28cbe8-7a58-4420-9acc-0cf060bd1291")
-	)
-	(segment
-		(start 60 85.5)
-		(end 62.5 88)
-		(width 0.2)
-		(layer "B.Cu")
-		(net 17)
-		(uuid "41d513d9-3611-4b0d-9aa9-e94161702ef8")
-	)
-	(segment
 		(start 87.149346 73.523)
 		(end 94.6 80.973654)
 		(width 0.2)
@@ -7558,10 +7293,50 @@
 		(net 22)
 		(uuid "c2a048f7-9aff-41e0-82a1-b389d6524778")
 	)
+	(segment
+		(start 43.2225 90.2775)
+		(end 43.2225 150.599483)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 23)
+		(uuid "53a5231b-1162-476e-8be4-d1cee631a601")
+	)
+	(segment
+		(start 48 85.5)
+		(end 43.2225 90.2775)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 23)
+		(uuid "7100882a-6efe-4b95-bb5e-342943e6ac5c")
+	)
+	(segment
+		(start 70.339 160.161)
+		(end 76.52 153.98)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 23)
+		(uuid "825cb299-48b9-44b9-8a00-8ca15203954a")
+	)
+	(segment
+		(start 52.784017 160.161)
+		(end 70.339 160.161)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 23)
+		(uuid "951a9ecd-c69a-4b6b-9b9a-48c45af05be5")
+	)
+	(segment
+		(start 43.2225 150.599483)
+		(end 52.784017 160.161)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 23)
+		(uuid "c196e9ef-1ab8-4266-9456-6dcc270bfea5")
+	)
 	(zone
 		(net 0)
 		(net_name "")
-		(layers "F&B.Cu")
+		(layers "F.Cu" "B.Cu")
 		(uuid "3ef62f66-35e1-4d08-a957-9887b741bc96")
 		(hatch edge 0.5)
 		(connect_pads
@@ -10523,4 +10298,5 @@
 			)
 		)
 	)
+	(embedded_fonts no)
 )
